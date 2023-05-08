@@ -1,0 +1,24 @@
+class Solution {
+public:
+    bool check(vector<int>& nums) {
+
+      int count=0;
+      int n=nums.size();
+      for(int i=1;i<n;i++){
+          // in this we can check the i asspass no. bara hai kya ...
+          if(nums[i-1]>nums[i]){
+              count++;
+          }
+      }
+      //in this we can check the last index bara hai 0 waale index sai bara haii tho count ko aagai badhadegaii...
+          if(nums[n-1]>nums[0]){
+              count++;
+          }
+          return count<=1;
+
+      
+
+
+    
+    }
+};
